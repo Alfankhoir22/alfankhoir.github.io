@@ -7,6 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!--CSS-->
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Portfolio | Alfankhoir</title>
   </head>
@@ -42,7 +47,7 @@
     <section class="jumbotron text-center">
       <img src="img/Alfan.png" alt="alfankhoir" width="200px" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Mochamad Alfan Khoir</h1>
-      <p class="lead">Mahasiswa | Freelance | Web Development | Editor Photo</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffff"
@@ -62,23 +67,11 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
-            <h5>Riwayat Pendidikan</h5>
-            <ol style="text-align: justify">
-              <li>TK Nurul Iman Karangtalun</li>
-              <li>MI Nurul Iman Karangtalun</li>
-              <li>MTs Salafiyah Syafi'iyah</li>
-              <li>MAS Salafiyah Syafi'iyah</li>
-            </ol>
+          <div class="col-md-4" data-aos="fade-right">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam asperiores, consectetur distinctio tempora delectus necessitatibus voluptatibus consequatur perferendis aut ad.</p>
           </div>
-          <div class="col-md-4">
-            <h5>Pengalaman</h5>
-            <ol style="text-align: justify">
-              <li>Anggota Organisasi Daerah</li>
-              <li>Ketua Divisi Kimia Jurusan MIPA</li>
-              <li>Membuat Website Sendiri</li>
-              <li>Photo Editor</li>
-            </ol>
+          <div class="col-md-4" data-aos="fade-left" data-aos-delay="200">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aspernatur voluptate, doloribus aperiam omnis incidunt distinctio, quisquam nam, debitis dolore iure in soluta non. Officia!</p>
           </div>
         </div>
       </div>
@@ -102,22 +95,22 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500">
               <img src="project/Project 1.jpg" class="card-img-top" alt="project 1" />
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="project/Project 2.jpg" class="card-img-top" alt="project 2s" />
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
               <img src="project/Project 2.jpg" class="card-img-top" alt="project 2" />
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
+              <img src="project/Project 3.jpg" class="card-img-top" alt="project 3" />
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
               <img src="project/project 4.jpg" class="card-img-top" alt="project 4" />
             </div>
           </div>
@@ -132,6 +125,60 @@
       </svg>
     </section>
     <!--Akhir Project-->
+
+    <!--GALLERY-->
+    <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Gallery</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <a href="#">
+              <img src="project/Project 5.jpg" alt="project 5" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="project/Project 6.jpg" alt="project 6" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="project/Project 7.jpg" alt="project 7" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="project/Project 8.jpg" alt="gambar 8" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="project/Project 9.jpg" alt="project 9" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="project/Project 10.jpg" alt="project 10" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="project/Project 11.jpg" alt="project 11" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="project/Project 12.jpg" alt="project 12" class="img-fluid gallery-img" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Akhir Gallery-->
 
     <!--CONTACT ME-->
     <section id="contact">
@@ -191,6 +238,31 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const galleryImage = document.querySelectorAll(".gallery-img");
+
+      galleryImage.forEach((img, i) => {
+        img.dataset.aos = "fade-down";
+        img.dataset.aosDelay = "i * 100";
+        img.dataset.aosDuration = 1000;
+      });
+
+      AOS.init({
+        once: true,
+        duration: 2000,
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", { duration: 2, delay: 1.5, text: "Mahasiswa | Freelance | Web Development | Photo Editor" });
+      gsap.from(".jumbotron img", { duration: 1, rotateY: 360, opacity: 0 });
+      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
+    </script>
 
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbwFdqaxvo92VY_t13OcuOxULTEaKkAEV1sHhtGobLs3A3t9DpVthYHfKwbnHxOt2dTfww/exec";
